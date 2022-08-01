@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Doom</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="content">
+
+		<h1 class="title">Aim Doomy Guy</h1>
+		<div class="score">
+			<p>Max Score:</p>
+			<span class="maxPoints">0</span>
+		</div>
+		<div class="container">
+			<div class="doom">
+				<img src="src/img/hud.png" class="hud" draggable="false">
+				<div class="sprites">
+					<img class="img img0 visible" src="src/img/pistol/img0.png" alt="" draggable="false">
+					<img class="img img1" src="src/img/pistol/img1.png" alt="" draggable="false">
+					<img class="img img2" src="src/img/pistol/img2.png" alt="" draggable="false">
+					<img class="img img3" src="src/img/pistol/img3.png" alt="" draggable="false">
+				</div>
+				<div class="headSprites">
+					<img class="head0 visible" src="src/img/head/head0.png" alt="" draggable="false">
+					<img class="head1" src="src/img/head/head1.png" alt="" draggable="false">
+					<img class="head2" src="src/img/head/head2.png" alt="" draggable="false">
+					<img class="head3" src="src/img/head/head3.png" alt="" draggable="false">
+				</div>
+			</div>
+			<div class="hudInfo">
+				<span class="points">+10</span>
+				<span class="ammo">50</span>
+				<span class="pointsAmmount">0</span>
+				<span class="bullet">50</span>
+			</div>
+			<canvas width="800" height="600"> 
+			</canvas>
+		</div>
+		<div class="difficulty">
+			<h1>Difficulty</h1>
+			<div class="buttons">
+				<button class="easy">I'm Too Young to Die</button>
+				<button class="normal">Hurt Me Plenty</button>
+				<button class="hard">Ultra Violence</button>
+				<button class="insane">Nightmare</button>
+			</div>
+		</div>
+		<div class="responsive"><h1>Sorry, this site is not yet available for responsive devices :(</h1></div>
+		
+	</div>
+	<footer>
+		<a href="https://www.linkedin.com/in/gordillolucas/" target="_blank">Linkedin</a>
+		<p>Made with ♡</p>
+		<a href="https://github.com/gordillolucas29" target="_blank">GitHub</a>
+	</footer>
+	<script src="main.js"></script>
+</body>
+</html>

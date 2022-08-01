@@ -1,0 +1,266 @@
+* {
+	user-select: none;
+	font-family: 'Righteous', cursive;
+	overflow-x:visible ;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: linear-gradient(to right, #232526, #414345); 
+}
+.content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column
+}
+
+.title {
+	font-size: 4rem;
+	color: whitesmoke;
+	text-shadow: 1px 5px 10px black;
+	margin-bottom: 20px;
+}
+
+.score {
+	display: flex;
+	font-size: 1.5rem;
+	color: whitesmoke;
+	text-shadow: 1px 5px 5px black;
+}
+
+.score > p {
+	margin-right: 10px;
+}
+
+.points {
+	position: absolute;
+	left: 48.8%;
+	top: 15rem;
+	font-size: 2rem;
+	visibility: hidden;
+	color: whitesmoke;
+	pointer-events: none;
+
+}
+
+.hudInfo {
+	position:relative;
+	pointer-events: none;
+}
+.pointsAmmount {
+	text-align: center;
+	top: 32.5rem;
+	left: 60%;
+	position:absolute;
+	color: #DB0000;
+	font-weight: bold;
+	font-size: 3rem;
+	text-shadow: 
+		-2.5px -2.5px 0px #3D0303,
+			0px -2.5px 0px #3D0303,
+			2.5px -2.5px 0px #3D0303,
+		-2.5px  0px 0px #3D0303,
+			2.5px  0px 0px #3D0303,
+		-2.5px  2.5px 0px #3D0303,
+			0px  2.5px 0px #3D0303,
+			2.5px  2.5px 0px #3D0303;
+	pointer-events: none;
+
+}
+.ammo {
+	top: 32.5rem;
+	left: 3%;
+	position:absolute;
+	color: #DB0000;
+	font-weight: bold;
+	font-size: 3rem;
+	text-shadow: 
+		-2.5px -2.5px 0px #3D0303,
+			0px -2.5px 0px #3D0303,
+			2.5px -2.5px 0px #3D0303,
+		-2.5px  0px 0px #3D0303,
+			2.5px  0px 0px #3D0303,
+		-2.5px  2.5px 0px #3D0303,
+			0px  2.5px 0px #3D0303,
+			2.5px  2.5px 0px #3D0303;
+	pointer-events: none;
+
+}
+
+.bullet {
+	top: 33.2rem;
+	left: 88.4%;
+
+	position:absolute;
+	font-size: 1rem;
+	color: #FFFF86;
+	font-weight: bold;
+	text-shadow: 
+		-.5px -.5px 0px #3D0303,
+			0px -.5px 0px #3D0303,
+			.5px -.5px 0px #3D0303,
+		-.5px  0px 0px #3D0303,
+			.5px  0px 0px #3D0303,
+		-.5px  2.5px 0px #3D0303,
+			0px  2.5px 0px #3D0303,
+			2.5px  2.5px 0px #3D0303;
+			pointer-events: none;
+	
+}
+
+canvas {
+	border: 2px solid black;
+	background-image: url(src/img/bg.png);
+	background-position: center;
+	background-size: cover;
+	cursor: crosshair;
+}
+
+
+.doom {
+	position: relative;
+}
+
+.hud {
+	position:absolute;
+	left: -7.1%;
+	top:  32.7rem;
+	pointer-events: none;
+}
+
+.sprites {
+	position:absolute;
+	left: 45%;
+	top: 19.4rem;
+	visibility: hidden;
+}
+
+.sprites > img {
+	position: absolute;
+	width: 10rem;
+	pointer-events: none;
+}
+
+.headSprites {
+	z-index: 3;
+	position: absolute;
+	left: 46.5%;
+	top: 33rem;
+	visibility: hidden;
+
+}
+
+.headSprites > img {
+	position: absolute;
+	width: 3.8rem;
+	pointer-events: none;
+
+}
+
+.visible {
+	visibility: visible;
+}
+
+.difficulty {
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 10px;
+
+}
+
+.difficulty h1 {
+	font-size: 2rem;
+	color: rgb(129, 129, 129);
+	text-shadow: 1px 5px 5px black;
+	margin-bottom: 20px;
+}
+
+.buttons {
+	display: flex;
+}
+
+.buttons > button {
+  background-color: #222;
+  border-radius: 6px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+	font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-right: 10px;
+  max-width: none;
+  min-height: 44px;
+  min-width: 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.buttons > button:hover,
+.buttons > button:focus {
+  opacity: .75;
+}
+
+.responsive {
+	visibility: hidden;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	background:#222;
+	padding: 10px;
+	text-align: center;
+	align-items: center;
+}
+
+footer > p {
+	color: #999a9b;
+	font-family:'Courier New', Courier, monospace ;
+}
+
+footer > a {
+	margin-left: 10px;
+	margin-right: 10px;
+	font-family:'Courier New', Courier, monospace ;
+	text-decoration: none;
+	color: #999a9b;
+}
+
+@media only screen and (max-width: 768px) {
+ * {
+	visibility: hidden !important;
+	overflow: hidden;
+ }
+
+ .responsive {
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+ }
+ .responsive > h1{
+	margin: 20px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color:whitesmoke;
+	font-weight: 200;
+	font-size: 1.5rem;
+	visibility: visible !important;
+ }
+
+}
